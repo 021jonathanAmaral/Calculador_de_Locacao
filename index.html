@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+ 
+    <script type="text/javascript" src="calculadora.js"></script>
+    <title>Imvel</title>
+</head>
+
+<html>
+
+
+
+
+<body>
+    <header>
+
+         
+        <nav class="NavEsquerda">
+
+            
+
+            <ul>
+                <li>  <img src="./icons/calculadora.png" alt="" width="20">CALCULADORA</li>
+                <li>  <img src="./icons/home (1).png" alt="" width="20">MEUS IMOVEIS</li>
+                <li>  <img src="./icons/group.png" alt="" width="20">INQUILINOS</li>
+                <li>  <img src="./icons/sair.png" alt="" width="20">SAIR</li>
+            </ul>
+        </nav>
+        
+    </header>
+    <HEAder>
+        
+        <div class="NavTop">
+           
+            
+
+            <div class="search">
+               
+                <input type="text" name="Pesquisa" id="pesquisa" placeholder="Pesquise aqui...">
+                <img src="./icons/loupe.png" width="20" alt="">
+
+            </div>
+           
+            <DIV class="perfil">
+                <img src="./icons/usuario-de-perfil (1).png" width="20" alt="">
+                <img src="./icons/settings.png" width="20" alt="">
+            </DIV>
+    
+
+        </div>
+
+       
+
+       
+    </header>
+    
+    
+  
+    <div class="NavTop-Mobile">
+
+        <nav>
+            <li> Calculadora</li>
+            <li> Imoveis</li>
+            <li> Inquilinos</li>
+            <li> Sair</li>
+        </nav>
+
+    </div>
+    
+
+
+    <main>
+        <section class="container">
+            
+            <div class="item">
+                <div class="item1-top">
+                    <h1>Dados de Locação</h1>
+                </div>
+               
+                <div class="item1-bottom">
+                   <div class="space" > <h4>Tempo de Locação</h4><input type="number" placeholder="..." id="TLTXT"></div>
+                   <div class="space" > <h4>Valor do Aluguel</h4><input type="number" placeholder="..." id="VATXT"></div>
+                   <div class="space" > <h4>Valor do Calção</h4><input type="number" placeholder="..."  id="VCTXT"></div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            <div class="item">
+                    
+                <div class="item">
+                    <div class="item1-top">
+                        <h1>Custos Mensais</h1>
+                    </div>
+                
+                    <div class="item1-bottom">
+                    <div class="space"> <h4>Taxa de adm</h4><input type="number" placeholder="..."      id="TATXT"></div>
+                    <div class="space"> <h4>Custo Manuteção</h4><input type="number" placeholder="..."  id="CMTXT"></div>
+                    <div class="space"> <h4>Custo IPTU</h4><input type="number" placeholder="..."       id="CITXT"></div>
+                   
+                    </div>
+
+
+            </div>
+                   
+            <div class="item">
+                  
+                <div class="item">
+                    <div class="item1-top">
+                        <h1>Despesas de entrega</h1>
+                    </div>
+                
+                    <div class="item1-bottom">
+                    <div class="space"> <h4>Mão de Obra</h4><input type="number" placeholder="..."  id="MATXT"></div>
+                    <div class="space"> <h4>Material</h4><input type="number" placeholder="..."     id="MLTXT"></div>
+                    <div class="space"> <h4>Logistica</h4><input type="number" placeholder="..."    id="LOGTXT"></div>
+                    
+                    </div>
+                    <div class="calc" onclick="IniciarCalculos()">
+                        <h2 id="calcular" >Calcular</h2>
+                        </div>
+            </div>
+           
+         
+        </section>
+    </main>
+    
+    <div class="modal" id="modal1">
+        <div class="Container-modal">
+            <DIV class="DISPLAY">
+                
+            
+                <div class="Line">  <div class="topics"><h4>Total Entradas</h4></div>      <div class="Lines"><p>$</p><p id= "Line1">000.000,00</p></div>  </div>
+                <div class="Line">  <div class="topics"><h4>Custos Mensais</h4></div>      <div class="Lines"><p>$</p><p id= "Line2">000.000,00</p></div>  </div>
+                <div class="Line">  <div class="topics"><h4>Custo Saída</h4></div>         <div class="Lines"><p>$</p><p id= "Line3">000.000,00</p></div>  </div>
+                <div class="Line">  <div class="topics"><h4>Caixa Final</h4></div>         <div class="Lines"><p>$</p><p id= "Line4">000.000,00</p></div>  </div>
+            
+                <button class="botão1" onclick="botao1()"> <h3>Gerar outro relatorio</h3></button>
+
+            </DIV>
+        </div>
+    </div>
+   
+   
+   
+</body>
+
+
+
+</html>
+

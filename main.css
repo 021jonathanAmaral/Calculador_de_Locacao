@@ -1,0 +1,527 @@
+
+    body{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        font-family:arial;
+        background-color: rgb(53, 37, 99);
+    }
+    
+    header{
+        
+       
+        position: fixed;
+        display: FLEX;
+        top: 0%;
+        left: 0%;
+    }
+  
+   
+  
+    header .NavEsquerda{
+    margin-top:50px;
+    }
+
+
+    
+
+.NavEsquerda{
+    background-color: rgb(11, 0, 41);
+    color: white;
+    width: 230px;
+    height: 100vh;
+    
+}
+
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 0;
+    
+}
+.perfil img{
+    margin-left: 5px;
+}
+
+.NavEsquerda ul{
+    margin-top: 0%;
+}
+.NavEsquerda ul:hover{
+    cursor: pointer;
+
+    
+}
+
+.NavEsquerda li{
+    display: flex;
+    list-style: none;
+    height: 50px;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.NavEsquerda li img{
+    margin-right: 5px;
+    
+
+}
+.NavEsquerda li:hover{
+    
+    background-color: white;
+    color: black;
+    
+    
+}
+.NavEsquerda img:hover{
+   
+    filter: invert(1);
+    
+}
+
+
+
+
+
+
+
+.NavTop{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(11, 0, 41);
+    color: rgb(255, 255, 255);
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17%;
+    width: 300px;
+    height: 30px;
+    border: white solid 1px;
+    border-radius: 10px;
+
+}
+.search input{
+    background: none;
+    border:none;
+  
+    color: white;
+    width: 80%;
+    height: 100%;
+}
+.search img{
+
+display: flex;
+justify-content: center;
+margin-left: 1px;
+}
+
+
+.perfil{
+margin-left: 1%;
+}
+
+
+
+
+
+
+main{
+   
+   
+    margin-top: 100px;
+    margin-left: 280px;
+}
+
+
+
+.NavTop-Mobile{
+    display: none;
+}
+
+
+
+
+.container{
+    border: 0px solid rgb(2, 2, 2) ;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "item"
+    "item"
+    "item"
+    ;
+    grid-gap: 10px;
+    
+}
+
+
+
+
+
+
+.item{
+    
+    width: 70vw;
+    border-radius: 10px;
+    background-color: rgb(11, 0, 41);
+    color: white;
+    height: 180px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.item h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.item1-bottom{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "item item item"
+    ;
+    
+}
+
+
+.space{
+background-color: white;
+height: 100%;
+width: 90%;
+color: black;
+border-radius: 10px;
+margin: 0 auto;
+}
+.space h4{
+    margin-bottom: 5px;
+    
+    }
+    .space input{
+        margin-bottom: 2px;
+    }
+
+
+    .calc{
+        margin: 0 auto;
+        background-color: white;
+        color: black;
+        height: 50px;
+       margin-top: 10px;
+       border-radius: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 50%;
+       cursor: pointer;
+    }
+    .calc:hover{
+        color: rgb(11, 0, 41);
+        background-color: rgb(200, 192, 216);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input{
+    background-color: none;
+    border: none;
+    border-bottom: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+ /*modal*/
+.modal{
+    display: none;
+}
+.modal.mudar{
+    display: flex;
+}
+
+ .modal{
+    position: fixed;
+    
+     width: 100%;
+     height: 100vh;
+    top: 0;
+    
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.Container-modal{
+
+display: flex;
+justify-content: center;
+ background-color: rgb(255, 255, 255);
+ border: 4px solid rgb(44, 0, 80);
+ border-radius: 10px;
+ width: 80%;
+ height: 500px;
+ 
+}
+
+.Line{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.Line p{
+ font-style: normal;
+ text-transform: uppercase;
+}
+.topics h4{
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+.Lines  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    border: purple 1PX solid;
+    border-radius: 10px;
+}
+
+button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(61, 12, 61);
+    width: 250px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(97, 21, 97);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 662px){
+
+    .NavEsquerda{
+    display: none;
+    background-image: linear-gradient( rgb(76, 0, 255), rgb(17, 0, 255));
+    color: white;
+    width: 230px;
+    height: 100vh;
+}
+
+.NavTop{
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+  
+    
+}
+.search{
+    width: 200px;
+    
+}
+
+
+main{
+  
+    
+    margin-top: 100px;
+    margin-left: 0
+}
+
+
+.NavTop-Mobile{
+    display: flex;
+    border-bottom:  rgb(0, 0, 0) solid 1px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+   
+    
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(11, 0, 41);
+    color: white;
+}
+.NavTop-Mobile nav{
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+  
+   
+    
+}
+.NavTop-Mobile nav li{
+    height: 40px;
+    width: 85px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavTop-Mobile nav li:hover{
+    background-color: rgb(11, 0, 41);
+}
+
+
+
+main{
+margin-top: 30px;
+}
+
+
+
+.item{
+    
+    width: 90vw;
+    border-radius: 10px;
+    background-color: rgb(11, 0, 41);
+    color: white;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 0;
+    
+}
+.item h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.item1-bottom{
+    width: 100%;
+    
+text-align: center;
+display: grid;
+    grid-template-areas: 
+    "item""item" "item"
+    ;
+    grid-gap: 10px;
+}
+
+
+.space{
+
+background-color: white;
+height: 100%;
+width: 80%;
+color: black;
+border-radius: 10px;
+} 
+.space h4{
+margin-bottom: 5px;
+
+}
+.space input{
+    margin-bottom: 2px;
+}
+
+
+}
+
+
+
+
+.calc{
+margin-top: 13px;
+}
